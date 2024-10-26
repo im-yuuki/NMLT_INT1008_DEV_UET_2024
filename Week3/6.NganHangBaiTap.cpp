@@ -88,11 +88,11 @@ int main() {
 
 bool check(int d, int m, int y) {
     if (m > 12) return false;
-    int maxDays = 0;
-    if ((m >= 8 && m % 2 == 0) || (m < 8 && m % 2 == 1)) maxDays = 31;
-    else if (m == 2) maxDays = (y % 4 == 0) ? 29 : 28;
-    else maxDays = 30;
-    return d <= maxDays;
+    int max_d = 0;
+    if ((m >= 8 && m % 2 == 0) || (m < 8 && m % 2 == 1)) max_d = 31;
+    else if (m == 2) max_d = (y % 4 == 0) ? 29 : 28;
+    else max_d = 30;
+    return d <= max_d;
 }
 
 int main() {

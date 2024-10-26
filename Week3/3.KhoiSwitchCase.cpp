@@ -2,37 +2,37 @@
 #include <iostream>
 using namespace std;
 
-string zodiac_sign(int day, int month) {
-    if ((month == 3 && day >= 21) || (month == 4 && day <= 19))
+string zodiac_sign(int d, int m) {
+    if ((m == 3 && d >= 21) || (m == 4 && d <= 19))
         return "Bach Duong";
-    else if ((month == 4 && day >= 20) || (month == 5 && day <= 20))
+    else if ((m == 4 && d >= 20) || (m == 5 && d <= 20))
         return "Kim Nguu";
-    else if ((month == 5 && day >= 21) || (month == 6 && day <= 21))
+    else if ((m == 5 && d >= 21) || (m == 6 && d <= 21))
         return "Song Tu";
-    else if ((month == 6 && day >= 22) || (month == 7 && day <= 22))
+    else if ((m == 6 && d >= 22) || (m == 7 && d <= 22))
         return "Cu Giai";
-    else if ((month == 7 && day >= 23) || (month == 8 && day <= 22))
+    else if ((m == 7 && d >= 23) || (m == 8 && d <= 22))
         return "Su Tu";
-    else if ((month == 8 && day >= 23) || (month == 9 && day <= 22))
+    else if ((m == 8 && d >= 23) || (m == 9 && d <= 22))
         return "Xu Nu";
-    else if ((month == 9 and day >= 23) || (month == 10 && day <= 23))
+    else if ((m == 9 and d >= 23) || (m == 10 && d <= 23))
         return "Thien Binh";
-    else if ((month == 10 && day >= 24) || (month == 11 && day <= 22))
+    else if ((m == 10 && d >= 24) || (m == 11 && d <= 22))
         return "Thien Yet";
-    else if ((month == 11 && day >= 23) || (month == 12 && day <= 21))
+    else if ((m == 11 && d >= 23) || (m == 12 && d <= 21))
         return "Nhan Ma";
-    else if ((month == 12 && day >= 22) || (month == 1 && day <= 19))
+    else if ((m == 12 && d >= 22) || (m == 1 && d <= 19))
         return "Ma Ket";
-    else if ((month == 1 && day >= 20) || (month == 2 && day <= 18))
+    else if ((m == 1 && d >= 20) || (m == 2 && d <= 18))
         return "Bao Binh";
-    else if ((month == 2 && day >= 19) || (month == 3 && day <= 20))
+    else if ((m == 2 && d >= 19) || (m == 3 && d <= 20))
         return "Song Ngu";
     return "";
 }
 
 int main() {
-    int day, month;
-    cin >> day >> month;
-    cout << zodiac_sign(day, month) << endl;
+    int d, m;
+    cin >> d >> m;
+    cout << zodiac_sign(d, m) << endl;
     return 0;
 }
