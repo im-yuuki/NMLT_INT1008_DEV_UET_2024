@@ -6,5 +6,5 @@ Tôi không chia sẻ công khai repository này, cũng như không khuyến kh�
 Vui lòng không sao chép nguyên bản code của tôi để làm bài nộp của bạn.
 
 
-*Đây chỉ là những bài tập cơ bản để rèn luyện kĩ năng lập trình mà thôi, vì vậy mong các bạn tự giác. Trân trọng!*
+*Đây chỉ là những bài tập cơ bản để rèn luyện kĩ năng lập trình mà thôi, vì vậy mong các bạn tự giác. Trân trọng!* 🐧🐧
     
