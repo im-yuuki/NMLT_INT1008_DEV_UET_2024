@@ -79,11 +79,19 @@ int main() {
 #include <algorithm>
 using namespace std;
 
+int Median(int a[], int n) {
+    if (a[0] < a[1]) swap(a[0], a[1]);
+    if (a[2] < a[3]) swap(a[2], a[3]);
+    int x1 = max(a[1], a[3]);
+    int x2 = min(a[0], a[2]);
+    int median = max(x1, min(x2, a[4]));
+    return median;
+}
+
 int main() {
     int a[5];
     for (int i = 0; i < 5; i++) cin >> a[i];
-    sort(a, a + 5);
-    cout << a[2] << endl;
+    cout << Median(a, 5) << endl;
 }
 
 

@@ -157,9 +157,9 @@ using namespace std;
 bool check(int map[9][9], int x, int row, int col) {
     for (int i = 0; i < 9; i++) if (map[row][i] == x) return false;
     for (int i = 0; i < 9; i++) if (map[i][col] == x) return false;
-    int x = (row / 3) * 3, y = (col / 3) * 3;
-    for (int j = x; j < x + 3; j++) 
-        for (int i = y; i < y + 3; i++) 
+    int offsetX = (row / 3) * 3, offsetY = (col / 3) * 3;
+    for (int i = offsetX; i < offsetX + 3; i++) 
+        for (int j = offsetY; j < offsetY + 3; j++) 
             if (map[i][j] == x) return false;
     return true;
 }
